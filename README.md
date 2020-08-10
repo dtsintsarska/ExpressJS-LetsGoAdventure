@@ -1,4 +1,4 @@
-# ExpressJS-LetsGoAdventure
+# ExpressJS-LetsGoAdventure - server for Let's Go Adventure Web Project.
 
 --- The current project works with dotenv library and .env file with the following structure:
 

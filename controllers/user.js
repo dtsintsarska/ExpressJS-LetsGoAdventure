@@ -4,7 +4,7 @@ const utils = require('../utils');
 
 module.exports = {
     get: (req, res, next) => {
-        models.User.findById(req.query.id)
+        models.User.findById(req.query.id).populate('participations').lean()
             .then((user) => res.send(user))
             .catch((err) => res.status(500).send("Error"))
     },

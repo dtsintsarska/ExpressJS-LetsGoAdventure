@@ -92,8 +92,11 @@ const offerSchema = new Schema({
             type: String,
             required: true
         }
-    }]
-
+    }],
+}, {
+    timestamps: {
+        createdAt: 'created_at'
+    }
 });
 
 module.exports = new Model('Offer', offerSchema);
